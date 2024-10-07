@@ -25,8 +25,8 @@ jobs:
             - name: Repository Dispatch
               uses: peter-evans/repository-dispatch@v3
               with:
-                  token: ${{ secrets.AUTOSYNC_TOKEN }}
-                  repository: ${{ secrets.AUTOSYNC_CH_URL }}
+                  token: ${{ secrets.REPO_DISPATCH_TOKEN  }}
+                  repository: Hemapriya17/Flowise
                   event-type: ${{ secrets.AUTOSYNC_SC_EVENT_TYPE }}
                   client-payload: >-
                       {
